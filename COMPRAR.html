@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="COMPRAR.css"> <meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>COMPRAR</title>
+  <script type="text/javascript">
+    function alerta() {
+      var nombre=document.getElementById('NOMBRE').value.trim();
+      var apellido=document.getElementById('APELLIDO').value.trim();
+      var ciudad=document.getElementById('CIUDAD').value.trim();
+      var helado=document.getElementById('HELADO');
+      var helados= helado.options[helado.selectedIndex].text;
+      var costo=helado.value;
+        if(nombre==""||apellido==""||ciudad==""||helado==""){
+          alert("Porfavor llena todos los campos");
+        }else{
+          var fecha=new Date().toLocaleString();
+          alert("COMPRA EXITOSA "+nombre+" "+apellido+" DEL HELADO "+helados+" Con un costo de Bs: "+costo+" Se enviara a: "+ciudad+"\n"+"fecha de compra: "+fecha);
+          
+        }
+    }
+  </script>
+</head>
+<body >
+	<header>
+		<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="3000">
+      <img src="LOGO.png" class="d-block w-100" alt="..." width="100%" height="395">
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="LOGO2.png" class="d-block w-100" alt="..."width="100%" height="395">
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="LOGO3.png" class="d-block w-100" alt="..."width="100%" height="395">
+    </div>
+  </div>
+</div>
+	</header>
+
+	<nav class="navbar navbar-expand-lg navbar-custom">
+  	<div class="container-fluid">
+    	<img src="LOGO.png" width="150" height="75">
+    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      	<span class="navbar-toggler-icon"></span>
+    	</button>
+    	<div class="collapse navbar-collapse" id="navbarScroll">
+      	<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        	<li class="nav-item">
+          		<a href="HeladoPanda.html"><button type="button" class="btn btn-warning"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+  						<path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/></svg>
+  						<h4>PRINCIPAL</h4></button></a>
+        		</li>
+        	<li class="nav-item">
+          	  <a href="CONTACTOS.html"><button type="button" class="btn btn-warning"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+  						<path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/></svg>
+  						<h4>CONTACTOS</h4></button></a>
+        	</li>
+        	<li class="nav-item">
+          		  <a href="PRODUCTOS.html"><button type="button" class="btn btn-warning"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cup-straw" viewBox="0 0 16 16">
+  							<path d="M13.902.334a.5.5 0 0 1-.28.65l-2.254.902-.4 1.927c.376.095.715.215.972.367.228.135.56.396.56.82q0 .069-.011.132l-.962 9.068a1.28 1.28 0 0 1-.524.93c-.488.34-1.494.87-3.01.87s-2.522-.53-3.01-.87a1.28 1.28 0 0 1-.524-.93L3.51 5.132A1 1 0 0 1 3.5 5c0-.424.332-.685.56-.82.262-.154.607-.276.99-.372C5.824 3.614 6.867 3.5 8 3.5c.712 0 1.389.045 1.985.127l.464-2.215a.5.5 0 0 1 .303-.356l2.5-1a.5.5 0 0 1 .65.278M9.768 4.607A14 14 0 0 0 8 4.5c-1.076 0-2.033.11-2.707.278A3.3 3.3 0 0 0 4.645 5c.146.073.362.15.648.222C5.967 5.39 6.924 5.5 8 5.5c.571 0 1.109-.03 1.588-.085zm.292 1.756C9.445 6.45 8.742 6.5 8 6.5c-1.133 0-2.176-.114-2.95-.308a6 6 0 0 1-.435-.127l.838 8.03c.013.121.06.186.102.215.357.249 1.168.69 2.438.69s2.081-.441 2.438-.69c.042-.029.09-.094.102-.215l.852-8.03a6 6 0 0 1-.435.127 9 9 0 0 1-.89.17zM4.467 4.884s.003.002.005.006zm7.066 0-.005.006zM11.354 5a3 3 0 0 0-.604-.21l-.099.445.055-.013c.286-.072.502-.149.648-.222"/></svg>
+  						<h4>PRODUCTOS</h4></button></a>
+        		</li>
+        		<li class="nav-item">
+          		  <a href="PRODUCTOS.html"><button type="button" class="btn btn-warning"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+  						  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/></svg>
+  						  <h4>COMPRAR</h4></button></a>
+        		</li>
+      	</ul>
+    	</div>
+  	</div>
+	</nav>
+  <main>
+    <div id="CONTAINERMAIN">
+    <form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/></svg> NOMBRE</label>
+    <input type="text" class="form-control" id="NOMBRE" value="" required>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom02" class="form-label"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/></svg> APELLIDO</label>
+    <input type="text" class="form-control" id="APELLIDO" value="" required>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom03" class="form-label"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/></svg> CIUDAD</label>
+    <input type="text" class="form-control" id="CIUDAD" required>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom04" class="form-label"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0"/>
+    <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z"/>
+    <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z"/>
+    <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567"/></svg> HELADO DE COMPRA</label>
+    <select class="form-select" id="HELADO" required>
+      <option selected disabled value="">...</option>
+      <option value="3">GUSANITO</option>
+      <option value="5">VAMPIRO</option>
+      <option value="4">CHOCOPANDA</option>
+      <option value="2">KREMOSO</option>
+      <option value="60">TORTA HELADA</option>
+      <option value="55">BRAZO GITANO</option>
+      <option value="1">CANELA</option>
+    </select>
+  </div>
+  <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar" id="progressBar"></div>
+</div>
+<script>
+  const form = document.querySelector("form");
+  const progressBar = document.getElementById("progressBar");
+
+  const campos = [
+    "NOMBRE",
+    "APELLIDO",
+    "CIUDAD",
+    "HELADO"
+  ];
+
+  function actualizarProgreso() {
+    let camposCompletos = 0;
+
+    campos.forEach(id => {
+      const campo = document.getElementById(id);
+      if (campo && campo.value.trim() !== "") {
+        camposCompletos++;
+      }
+    });
+
+    const porcentaje = Math.round((camposCompletos / campos.length) * 100);
+    progressBar.style.width = porcentaje + "%";
+    progressBar.innerText = porcentaje + "%";
+    progressBar.setAttribute("aria-valuenow", porcentaje);
+  }
+
+  // Detectar cambios en los campos
+  campos.forEach(id => {
+    const campo = document.getElementById(id);
+    if (campo) {
+      campo.addEventListener("input", actualizarProgreso);
+    }
+  });
+
+  // Llamar al cargar por si hay datos precargados
+  actualizarProgreso();
+</script>
+
+
+  <div class="ratio ratio-10x9" style="width: 500px; height: 500px; align-items:left">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d454.4926313157251!2d-68.1548482!3d-16.5155322!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edfb6b1b68791%3A0x5a9113fad33fa04b!2sAgencia%20panda!5e1!3m2!1ses-419!2sbo!4v1749416547508!5m2!1ses-419!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="500" height="375"></iframe>
+  </div>
+  <br>
+  <div class="col-md-3">
+    <button class="btn btn-warning" type="submit" onclick="alerta()"><h4>COMPRAR</h4></button>
+    <h3>COMO LLEGAR A NUESTRA GENCIA EN PLAZA OBELISCO DE EL ALTO</h3>
+    <video autoplay loop muted style="width: 350px; height: 300px; align-items: margin-left;"><source src="VIDEO_COMOLLEGAR.mp4"></video>
+  </div>
+</form>
+</div>
+  </main>
+  <br>
+  <center>
+    <nav aria-label="...">
+        <ul class="pagination">
+          <li class="page-item"><a href="PRODUCTOS.html" class="page-link">ANTERIOR</a></li>
+          <li class="page-item"><a class="page-link" href="HeladoPanda.html">1</a></li>
+          <li class="page-item"><a class="page-link" href="CONTACTOS.html">2</a></li>
+          <li class="page-item"><a class="page-link" href="PRODUCTOS.html">3</a></li>
+          <li class="page-item active">
+          <a class="page-link" href="#" aria-current="page">4</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">SIGUIENTE</a></li>
+        </ul>
+    </nav>
+  </center>
+  <footer class="footer">
+    <div class="CONTAINERFOOTER">
+      <div class="footer-row">
+        <div class="footer-links">
+          <h4>SIGUENOS EN:</h4>
+          <ul>
+            <li><a href="https://www.facebook.com/HeladosPandaOficial/" class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+              </svg>Facebook</a></li>
+            <li><a href="https://www.tiktok.com/@heladeria_panda/video/7486982531871526199" class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+              <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/></svg>Tik Tok</a></li>
+            <li><a href="" class="text-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+              <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+            </svg>WhatsApp</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>COMPAÑIA</h4>
+          <ul>
+            <li><a class="footer-link" href="HeladoPanda.html">Nosotros</a></li>
+            <li><a class="footer-link" href="PRODUCTOS.html">Nuestros Productos</a></li>
+            <li><a href="">Politica de Privacidad</a></li>
+            <li><a class="footer-link" href="COMPRAR.html">Compra</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <p>© 2025 Helados Panda. Todos los derechos reservados.</p><br>
+    
+</footer>
+      <script src="/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

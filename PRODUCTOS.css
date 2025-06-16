@@ -1,0 +1,88 @@
+*{
+	padding: 0px;
+	border: 0px;
+}
+body{
+	grid-row: flex;
+	width: auto;
+	height: auto;
+}
+h4{
+	color: white;
+}
+header{
+	width: auto;
+	height: auto;
+}
+nav{
+	width: auto;
+	height: auto;
+}
+.navbar-custom {
+  background-color: #e91e63;
+}
+.btn-warning{
+	width: 130px;
+	height: 70px;
+}
+.nav-item{
+	margin-right: 25px;
+}
+.pagination .page-link {
+  font-size: 20px;
+  color: white;
+  background-color: #f6a007 ;
+}
+.pagination .page-item.active .page-link {
+  background-color: #e91e63;
+  border-color: #e91e63;
+}
+.CONTAINERMAIN{
+	width: 100%;
+	overflow-x: hidden;
+	border: 0px;
+}
+.CONTAINERMAIN2{
+	width: 100%;
+	overflow-x: hidden;
+	border: 0px;
+}
+.CONTAINERMAIN3{
+	width: 100%;
+	overflow-x: hidden;
+	border: 0px;
+}
+.CONTAINERMAIN4{
+	width: 100%;
+	overflow-x: hidden;
+	border: 0px;
+}
+footer{
+	width: auto;
+	height: auto;
+	background-color:#e91e63;
+	text-align: center;
+	color: white;
+}
+.footer-row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer-links{
+	width: 50%;
+	padding: 0 15px;
+}
+.footer-links h4{
+	font-size: 20px;
+	border-bottom: 2px solid white;
+}
+.footer-links ul{
+	list-style: none;
+}
+.footer-links ul li a{
+	color: white;
+	text-decoration: none;
+}
+.footer-links a:hover{
+	color: #f6a007;
+}
